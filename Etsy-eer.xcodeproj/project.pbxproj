@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3FB2EE881EEF585200C4044C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EE871EEF585200C4044C /* AppDelegate.swift */; };
-		3FB2EE8A1EEF585200C4044C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EE891EEF585200C4044C /* ViewController.swift */; };
 		3FB2EE8D1EEF585200C4044C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2EE8B1EEF585200C4044C /* Main.storyboard */; };
 		3FB2EE901EEF585200C4044C /* Etsy_eer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EE8E1EEF585200C4044C /* Etsy_eer.xcdatamodeld */; };
 		3FB2EE921EEF585200C4044C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2EE911EEF585200C4044C /* Assets.xcassets */; };
 		3FB2EE951EEF585200C4044C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2EE931EEF585200C4044C /* LaunchScreen.storyboard */; };
 		3FB2EEA01EEF585200C4044C /* Etsy_eerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EE9F1EEF585200C4044C /* Etsy_eerTests.swift */; };
+		3FB2EEAB1EEF5A3900C4044C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEAA1EEF5A3900C4044C /* HomeViewController.swift */; };
+		3FB2EEAD1EEF5A9600C4044C /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEAC1EEF5A9600C4044C /* Listing.swift */; };
+		3FB2EEAF1EEF5AA600C4044C /* CurrencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEAE1EEF5AA600C4044C /* CurrencyManager.swift */; };
+		3FB2EEB11EEF5AB500C4044C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEB01EEF5AB500C4044C /* NetworkManager.swift */; };
+		3FB2EEB31EEF5ABC00C4044C /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEB21EEF5ABC00C4044C /* RequestBuilder.swift */; };
+		3FB2EEBA1EEF5B3200C4044C /* EtsyListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEB91EEF5B3200C4044C /* EtsyListingCell.swift */; };
+		3FB2EEBC1EEF5B4E00C4044C /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEBB1EEF5B4E00C4044C /* Loader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +35,6 @@
 /* Begin PBXFileReference section */
 		3FB2EE841EEF585200C4044C /* Etsy-eer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Etsy-eer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB2EE871EEF585200C4044C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FB2EE891EEF585200C4044C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FB2EE8C1EEF585200C4044C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FB2EE8F1EEF585200C4044C /* Etsy_eer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Etsy_eer.xcdatamodel; sourceTree = "<group>"; };
 		3FB2EE911EEF585200C4044C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +43,13 @@
 		3FB2EE9B1EEF585200C4044C /* Etsy-eerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Etsy-eerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB2EE9F1EEF585200C4044C /* Etsy_eerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Etsy_eerTests.swift; sourceTree = "<group>"; };
 		3FB2EEA11EEF585200C4044C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB2EEAA1EEF5A3900C4044C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
+		3FB2EEAC1EEF5A9600C4044C /* Listing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		3FB2EEAE1EEF5AA600C4044C /* CurrencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyManager.swift; sourceTree = "<group>"; };
+		3FB2EEB01EEF5AB500C4044C /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3FB2EEB21EEF5ABC00C4044C /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		3FB2EEB91EEF5B3200C4044C /* EtsyListingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtsyListingCell.swift; sourceTree = "<group>"; };
+		3FB2EEBB1EEF5B4E00C4044C /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +91,11 @@
 		3FB2EE861EEF585200C4044C /* Etsy-eer */ = {
 			isa = PBXGroup;
 			children = (
-				3FB2EE871EEF585200C4044C /* AppDelegate.swift */,
-				3FB2EE891EEF585200C4044C /* ViewController.swift */,
-				3FB2EE8B1EEF585200C4044C /* Main.storyboard */,
-				3FB2EE911EEF585200C4044C /* Assets.xcassets */,
-				3FB2EE931EEF585200C4044C /* LaunchScreen.storyboard */,
-				3FB2EE961EEF585200C4044C /* Info.plist */,
-				3FB2EE8E1EEF585200C4044C /* Etsy_eer.xcdatamodeld */,
+				3FB2EEB41EEF5AC300C4044C /* Model */,
+				3FB2EEB81EEF5B0C00C4044C /* Views */,
+				3FB2EEB51EEF5AD000C4044C /* Controller */,
+				3FB2EEB71EEF5AF000C4044C /* Supporting Files */,
+				3FB2EEB61EEF5AE000C4044C /* UI */,
 			);
 			path = "Etsy-eer";
 			sourceTree = "<group>";
@@ -97,6 +107,54 @@
 				3FB2EEA11EEF585200C4044C /* Info.plist */,
 			);
 			path = "Etsy-eerTests";
+			sourceTree = "<group>";
+		};
+		3FB2EEB41EEF5AC300C4044C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FB2EEAC1EEF5A9600C4044C /* Listing.swift */,
+				3FB2EEAE1EEF5AA600C4044C /* CurrencyManager.swift */,
+				3FB2EEB01EEF5AB500C4044C /* NetworkManager.swift */,
+				3FB2EEB21EEF5ABC00C4044C /* RequestBuilder.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3FB2EEB51EEF5AD000C4044C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FB2EEAA1EEF5A3900C4044C /* HomeViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3FB2EEB61EEF5AE000C4044C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3FB2EE8B1EEF585200C4044C /* Main.storyboard */,
+				3FB2EE931EEF585200C4044C /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		3FB2EEB71EEF5AF000C4044C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FB2EE8E1EEF585200C4044C /* Etsy_eer.xcdatamodeld */,
+				3FB2EE871EEF585200C4044C /* AppDelegate.swift */,
+				3FB2EE911EEF585200C4044C /* Assets.xcassets */,
+				3FB2EE961EEF585200C4044C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FB2EEB81EEF5B0C00C4044C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3FB2EEBB1EEF5B4E00C4044C /* Loader.swift */,
+				3FB2EEB91EEF5B3200C4044C /* EtsyListingCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +261,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB2EEB31EEF5ABC00C4044C /* RequestBuilder.swift in Sources */,
+				3FB2EEB11EEF5AB500C4044C /* NetworkManager.swift in Sources */,
 				3FB2EE901EEF585200C4044C /* Etsy_eer.xcdatamodeld in Sources */,
-				3FB2EE8A1EEF585200C4044C /* ViewController.swift in Sources */,
+				3FB2EEAF1EEF5AA600C4044C /* CurrencyManager.swift in Sources */,
 				3FB2EE881EEF585200C4044C /* AppDelegate.swift in Sources */,
+				3FB2EEAD1EEF5A9600C4044C /* Listing.swift in Sources */,
+				3FB2EEAB1EEF5A3900C4044C /* HomeViewController.swift in Sources */,
+				3FB2EEBA1EEF5B3200C4044C /* EtsyListingCell.swift in Sources */,
+				3FB2EEBC1EEF5B4E00C4044C /* Loader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
