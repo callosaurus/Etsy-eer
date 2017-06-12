@@ -1,0 +1,6 @@
+framework module Pods_Etsy_eerTests {
+  umbrella header "Pods-Etsy-eerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

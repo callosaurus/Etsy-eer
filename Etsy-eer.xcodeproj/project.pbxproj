@@ -20,6 +20,8 @@
 		3FB2EEB31EEF5ABC00C4044C /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEB21EEF5ABC00C4044C /* RequestBuilder.swift */; };
 		3FB2EEBA1EEF5B3200C4044C /* EtsyListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEB91EEF5B3200C4044C /* EtsyListingCell.swift */; };
 		3FB2EEBC1EEF5B4E00C4044C /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEBB1EEF5B4E00C4044C /* Loader.swift */; };
+		5B800DB429637901E3583130 /* Pods_Etsy_eer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCAB8F77BD0EEFAE7D26323 /* Pods_Etsy_eer.framework */; };
+		EB43088F0F6767C5652D49D6 /* Pods_Etsy_eerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DFA2B52A0A499687D75EE9 /* Pods_Etsy_eerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C3F281D4776F3547EAF3A57 /* Pods-Etsy-eer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Etsy-eer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Etsy-eer/Pods-Etsy-eer.debug.xcconfig"; sourceTree = "<group>"; };
+		13DFA2B52A0A499687D75EE9 /* Pods_Etsy_eerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Etsy_eerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCAB8F77BD0EEFAE7D26323 /* Pods_Etsy_eer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Etsy_eer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB2EE841EEF585200C4044C /* Etsy-eer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Etsy-eer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB2EE871EEF585200C4044C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FB2EE8C1EEF585200C4044C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,6 +55,9 @@
 		3FB2EEB21EEF5ABC00C4044C /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		3FB2EEB91EEF5B3200C4044C /* EtsyListingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtsyListingCell.swift; sourceTree = "<group>"; };
 		3FB2EEBB1EEF5B4E00C4044C /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		5EFA65D79FC7C3001BA63980 /* Pods-Etsy-eerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Etsy-eerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Etsy-eerTests/Pods-Etsy-eerTests.release.xcconfig"; sourceTree = "<group>"; };
+		86C61B68C6DEA88DF9CF4DA2 /* Pods-Etsy-eer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Etsy-eer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Etsy-eer/Pods-Etsy-eer.release.xcconfig"; sourceTree = "<group>"; };
+		BB687C915000C1EF52208658 /* Pods-Etsy-eerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Etsy-eerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Etsy-eerTests/Pods-Etsy-eerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B800DB429637901E3583130 /* Pods_Etsy_eer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB43088F0F6767C5652D49D6 /* Pods_Etsy_eerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +86,8 @@
 				3FB2EE861EEF585200C4044C /* Etsy-eer */,
 				3FB2EE9E1EEF585200C4044C /* Etsy-eerTests */,
 				3FB2EE851EEF585200C4044C /* Products */,
+				D55DB64A9F1FBBBC3272BA18 /* Pods */,
+				668688A4895E9A913B4DCC14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +106,8 @@
 				3FB2EEB41EEF5AC300C4044C /* Model */,
 				3FB2EEB81EEF5B0C00C4044C /* Views */,
 				3FB2EEB51EEF5AD000C4044C /* Controller */,
-				3FB2EEB71EEF5AF000C4044C /* Supporting Files */,
 				3FB2EEB61EEF5AE000C4044C /* UI */,
+				3FB2EEB71EEF5AF000C4044C /* Supporting Files */,
 			);
 			path = "Etsy-eer";
 			sourceTree = "<group>";
@@ -157,6 +169,26 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		668688A4895E9A913B4DCC14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CCAB8F77BD0EEFAE7D26323 /* Pods_Etsy_eer.framework */,
+				13DFA2B52A0A499687D75EE9 /* Pods_Etsy_eerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D55DB64A9F1FBBBC3272BA18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C3F281D4776F3547EAF3A57 /* Pods-Etsy-eer.debug.xcconfig */,
+				86C61B68C6DEA88DF9CF4DA2 /* Pods-Etsy-eer.release.xcconfig */,
+				BB687C915000C1EF52208658 /* Pods-Etsy-eerTests.debug.xcconfig */,
+				5EFA65D79FC7C3001BA63980 /* Pods-Etsy-eerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FB2EEA41EEF585200C4044C /* Build configuration list for PBXNativeTarget "Etsy-eer" */;
 			buildPhases = (
+				56657895555B8A4D26CD248F /* [CP] Check Pods Manifest.lock */,
 				3FB2EE801EEF585200C4044C /* Sources */,
 				3FB2EE811EEF585200C4044C /* Frameworks */,
 				3FB2EE821EEF585200C4044C /* Resources */,
+				65EF6945BE7033B7FB36496A /* [CP] Embed Pods Frameworks */,
+				6E1207D3A00CE480D4108FC8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FB2EEA71EEF585200C4044C /* Build configuration list for PBXNativeTarget "Etsy-eerTests" */;
 			buildPhases = (
+				71CF3357A3B1F975BC4BDC9A /* [CP] Check Pods Manifest.lock */,
 				3FB2EE971EEF585200C4044C /* Sources */,
 				3FB2EE981EEF585200C4044C /* Frameworks */,
 				3FB2EE991EEF585200C4044C /* Resources */,
+				4B4F446F3DA38BAAB964451E /* [CP] Embed Pods Frameworks */,
+				8D273A02A3BA7AC99F4FF5DC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,6 +293,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B4F446F3DA38BAAB964451E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Etsy-eerTests/Pods-Etsy-eerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56657895555B8A4D26CD248F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		65EF6945BE7033B7FB36496A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Etsy-eer/Pods-Etsy-eer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E1207D3A00CE480D4108FC8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Etsy-eer/Pods-Etsy-eer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71CF3357A3B1F975BC4BDC9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D273A02A3BA7AC99F4FF5DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Etsy-eerTests/Pods-Etsy-eerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3FB2EE801EEF585200C4044C /* Sources */ = {
@@ -406,6 +537,7 @@
 		};
 		3FB2EEA51EEF585200C4044C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C3F281D4776F3547EAF3A57 /* Pods-Etsy-eer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L73BUW34SZ;
@@ -419,6 +551,7 @@
 		};
 		3FB2EEA61EEF585200C4044C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86C61B68C6DEA88DF9CF4DA2 /* Pods-Etsy-eer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L73BUW34SZ;
@@ -432,6 +565,7 @@
 		};
 		3FB2EEA81EEF585200C4044C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB687C915000C1EF52208658 /* Pods-Etsy-eerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -446,6 +580,7 @@
 		};
 		3FB2EEA91EEF585200C4044C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EFA65D79FC7C3001BA63980 /* Pods-Etsy-eerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
