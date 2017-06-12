@@ -1,26 +1,119 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Etsy_eer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="svY-oh-CNq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2vr-3f-E86">
+                                <rect key="frame" x="16" y="94" width="343" height="529"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listing" rowHeight="100" id="bfY-hF-RWo" customClass="EtsyListingCell" customModule="Etsy_eer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bfY-hF-RWo" id="CaS-XB-bg0">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uZM-Vf-csZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="99.5" height="99.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="uZM-Vf-csZ" secondAttribute="height" multiplier="1:1" id="Wz7-bs-3LL"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0m-5R-Mf6">
+                                                    <rect key="frame" x="107.5" y="8" width="227.5" height="67.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="priceLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RS-Wu-0CL">
+                                                    <rect key="frame" x="107.5" y="75.5" width="105" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="105" id="3aw-aP-nWj"/>
+                                                        <constraint firstAttribute="height" constant="24" id="osX-e2-osZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="L0m-5R-Mf6" firstAttribute="leading" secondItem="uZM-Vf-csZ" secondAttribute="trailing" constant="8" id="1R5-gG-YhE"/>
+                                                <constraint firstItem="2RS-Wu-0CL" firstAttribute="leading" secondItem="uZM-Vf-csZ" secondAttribute="trailing" constant="8" id="7bS-uA-aU2"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="L0m-5R-Mf6" secondAttribute="trailing" id="KCK-Qb-DEh"/>
+                                                <constraint firstItem="L0m-5R-Mf6" firstAttribute="top" secondItem="CaS-XB-bg0" secondAttribute="topMargin" id="RMd-wU-bAt"/>
+                                                <constraint firstAttribute="bottom" secondItem="uZM-Vf-csZ" secondAttribute="bottom" id="d5E-xy-PsN"/>
+                                                <constraint firstItem="uZM-Vf-csZ" firstAttribute="leading" secondItem="CaS-XB-bg0" secondAttribute="leading" id="dRn-Pb-pvc"/>
+                                                <constraint firstItem="2RS-Wu-0CL" firstAttribute="top" secondItem="L0m-5R-Mf6" secondAttribute="bottom" id="rLl-C3-Wu9"/>
+                                                <constraint firstItem="uZM-Vf-csZ" firstAttribute="top" secondItem="CaS-XB-bg0" secondAttribute="top" id="v0a-Mh-6sQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="2RS-Wu-0CL" secondAttribute="bottom" id="wq4-Pt-twY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="listingImageView" destination="uZM-Vf-csZ" id="iSp-hz-Z3w"/>
+                                            <outlet property="priceLabel" destination="2RS-Wu-0CL" id="WMX-dw-KDs"/>
+                                            <outlet property="titleLabel" destination="L0m-5R-Mf6" id="uhd-xM-Gom"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="osf-yf-cH4">
+                                <rect key="frame" x="24" y="631" width="327" height="29"/>
+                                <segments>
+                                    <segment title="USD"/>
+                                    <segment title="GBP"/>
+                                    <segment title="CAD"/>
+                                    <segment title="EUR"/>
+                                </segments>
+                                <color key="tintColor" red="0.96078431369999995" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Etsy_logo" translatesAutoresizingMaskIntoConstraints="NO" id="x3i-II-77S">
+                                <rect key="frame" x="137.5" y="28" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uur-4K-N9w"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.97647058819999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="osf-yf-cH4" secondAttribute="trailing" constant="8" id="4Qu-aL-rOn"/>
+                            <constraint firstItem="osf-yf-cH4" firstAttribute="centerX" secondItem="svY-oh-CNq" secondAttribute="centerX" id="5fj-t8-AYL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="osf-yf-cH4" secondAttribute="bottom" constant="8" id="EZJ-Fb-WJp"/>
+                            <constraint firstItem="2vr-3f-E86" firstAttribute="leading" secondItem="svY-oh-CNq" secondAttribute="leadingMargin" id="Kbv-6X-YZA"/>
+                            <constraint firstItem="2vr-3f-E86" firstAttribute="trailing" secondItem="svY-oh-CNq" secondAttribute="trailingMargin" id="Lon-C7-XM9"/>
+                            <constraint firstItem="x3i-II-77S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="SzR-oA-z1Y"/>
+                            <constraint firstItem="2vr-3f-E86" firstAttribute="top" secondItem="x3i-II-77S" secondAttribute="bottom" constant="16" id="ZTH-qm-sFj"/>
+                            <constraint firstItem="x3i-II-77S" firstAttribute="centerX" secondItem="svY-oh-CNq" secondAttribute="centerX" id="gb8-xt-lGJ"/>
+                            <constraint firstItem="osf-yf-cH4" firstAttribute="top" secondItem="2vr-3f-E86" secondAttribute="bottom" constant="8" id="kEk-we-p2l"/>
+                            <constraint firstItem="osf-yf-cH4" firstAttribute="leading" secondItem="svY-oh-CNq" secondAttribute="leadingMargin" constant="8" id="pCC-ug-xJv"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Etsy_logo" width="100" height="57"/>
+    </resources>
 </document>
