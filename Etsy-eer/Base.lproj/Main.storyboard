@@ -86,6 +86,9 @@
                                     <segment title="EUR"/>
                                 </segments>
                                 <color key="tintColor" red="0.96078431369999995" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="currencyControlValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="iWg-yA-QXP"/>
+                                </connections>
                             </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Etsy_logo" translatesAutoresizingMaskIntoConstraints="NO" id="x3i-II-77S">
                                 <rect key="frame" x="137.5" y="28" width="100" height="50"/>
@@ -108,6 +111,9 @@
                             <constraint firstItem="osf-yf-cH4" firstAttribute="leading" secondItem="svY-oh-CNq" secondAttribute="leadingMargin" constant="8" id="pCC-ug-xJv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="2vr-3f-E86" id="keb-yJ-AJL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

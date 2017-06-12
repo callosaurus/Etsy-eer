@@ -10,15 +10,24 @@ import UIKit
 
 class EtsyListingCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var listingImageView: UIImageView!
+    
+    var listing: Listing! {
+        didSet {
+            configure()
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    fileprivate func configure() {
+        
+        listingImageView.image = listing.listingImage
+        titleLabel.text = listing.listingTitle
+        titleLabel.numberOfLines = 0
+        titleLabel.adjustsFontSizeToFitWidth = true
+        priceLabel.text = listing.listingPrice
+        priceLabel.textColor = UIColor.orange
     }
 
 }
