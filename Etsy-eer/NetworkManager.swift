@@ -59,7 +59,24 @@ class NetworkManager: NSObject {
         }
     }
 
-    
-    
-    
+    func getCurrentExchangeRates(completionHandler: @escaping (Bool) -> Void) {
+        
+        let urlString = requestBuilder.buildFixerioURLString()
+        
+        //Had to Allow Arbitrary Loads in Info.plist, ATS still catches exception domain
+        Alamofire.request(urlString).responseJSON {response in
+            if response.result.isFailure == true {
+                return
+            }
+            
+            let json = JSON(response.result.value!)
+            
+            self.exchangeRates = ["CAD" : json["rates"]["CAD"].numberValue,
+                                  "GBP" : json["rates"]["GBP"].numberValue,
+                                  "EUR" : json["rates"]["EUR"].numberValue]
+            completionHandler(true)
+        }
+        
+    }
+
 }
