@@ -21,7 +21,7 @@
 		3FB2EEAD1EEF5A9600C4044C /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEAC1EEF5A9600C4044C /* Listing.swift */; };
 		3FB2EEAF1EEF5AA600C4044C /* CurrencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEAE1EEF5AA600C4044C /* CurrencyManager.swift */; };
 		3FB2EEB11EEF5AB500C4044C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEB01EEF5AB500C4044C /* NetworkManager.swift */; };
-		3FB2EEB31EEF5ABC00C4044C /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEB21EEF5ABC00C4044C /* RequestBuilder.swift */; };
+		3FB2EEB31EEF5ABC00C4044C /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEB21EEF5ABC00C4044C /* RequestFactory.swift */; };
 		3FB2EEBA1EEF5B3200C4044C /* EtsyListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEB91EEF5B3200C4044C /* EtsyListingCell.swift */; };
 		3FB2EEBC1EEF5B4E00C4044C /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEBB1EEF5B4E00C4044C /* Loader.swift */; };
 		3FB2EEBE1EEF5D0400C4044C /* String+HTMLEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EEBD1EEF5D0400C4044C /* String+HTMLEntities.swift */; };
@@ -61,7 +61,7 @@
 		3FB2EEAC1EEF5A9600C4044C /* Listing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		3FB2EEAE1EEF5AA600C4044C /* CurrencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyManager.swift; sourceTree = "<group>"; };
 		3FB2EEB01EEF5AB500C4044C /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		3FB2EEB21EEF5ABC00C4044C /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		3FB2EEB21EEF5ABC00C4044C /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		3FB2EEB91EEF5B3200C4044C /* EtsyListingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtsyListingCell.swift; sourceTree = "<group>"; };
 		3FB2EEBB1EEF5B4E00C4044C /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		3FB2EEBD1EEF5D0400C4044C /* String+HTMLEntities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+HTMLEntities.swift"; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 				3FB2EEAC1EEF5A9600C4044C /* Listing.swift */,
 				3FB2EEAE1EEF5AA600C4044C /* CurrencyManager.swift */,
 				3FB2EEB01EEF5AB500C4044C /* NetworkManager.swift */,
-				3FB2EEB21EEF5ABC00C4044C /* RequestBuilder.swift */,
+				3FB2EEB21EEF5ABC00C4044C /* RequestFactory.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -407,7 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FB2EEB31EEF5ABC00C4044C /* RequestBuilder.swift in Sources */,
+				3FB2EEB31EEF5ABC00C4044C /* RequestFactory.swift in Sources */,
 				3FB2EEB11EEF5AB500C4044C /* NetworkManager.swift in Sources */,
 				3FB2EE901EEF585200C4044C /* Etsy_eer.xcdatamodeld in Sources */,
 				3FB2EEAF1EEF5AA600C4044C /* CurrencyManager.swift in Sources */,

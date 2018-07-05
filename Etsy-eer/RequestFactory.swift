@@ -1,5 +1,5 @@
 //
-//  RequestBuilder.swift
+//  RequestFactory.swift
 //  Etsy-eer
 //
 //  Created by Callum Davies on 2017-06-12.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class RequestBuilder: NSObject {
+class RequestFactory: NSObject {
   
   let apiKeyString = "h0k9dbc9nfb3vm587fcha0gt"
-  let fixerioAccessKey = "9b1e285e294218d2219ed9227f2da874"
+  let fixerioAccessKey = "9b1e285e2942219ed9227f2da874"
   let limit = 20
   
   func buildEtsyURLString(limit : Int) -> String {

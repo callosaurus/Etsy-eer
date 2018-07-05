@@ -15,10 +15,10 @@ class NetworkManager: NSObject {
   
   var arrayOfListings = [Listing]()
   var exchangeRates = [String : NSNumber]()
-  let requestBuilder = RequestBuilder()
+  let requestFactory = RequestFactory()
   
   func getEtsyListings (completionHandler: @escaping (Bool) -> Void) {
-    let urlString = requestBuilder.buildEtsyURLString(limit: 60)
+    let urlString = requestFactory.buildEtsyURLString(limit: 60)
     Alamofire.request(urlString).responseJSON { response in
       
       if response.result.isFailure == true {
@@ -54,7 +54,7 @@ class NetworkManager: NSObject {
   }
   
   func getCurrentExchangeRates(completionHandler: @escaping (Bool) -> Void) {
-    let urlString = requestBuilder.buildFixerioURLString()
+    let urlString = requestFactory.buildFixerioURLString()
     
     Alamofire.request(urlString).responseJSON {response in
       if response.result.isFailure == true {
