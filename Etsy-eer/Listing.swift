@@ -9,18 +9,18 @@
 import UIKit
 
 class Listing: NSObject {
-
-    var listingTitle: String?
-    var listingPrice: String?
-    var listingCurrencyCode: String?
-    var listingImageURL: URL?
-    var listingImage: UIImage?
-    
-    init(title : String, price : String, currencyCode: String, imageURL: URL) {
-        self.listingTitle = title
-        self.listingPrice = price
-        self.listingCurrencyCode = currencyCode
-        self.listingImageURL = imageURL
-    }
-    
+  
+  var listingTitle: String?
+  var listingPrice: String?
+  var listingCurrencyCode: String?
+  var listingImageURL: URL?
+  var listingImage: UIImage?
+  
+  init(title : String, price : String, currencyCode: String, imageURL: URL) {
+    self.listingTitle = title
+    self.listingPrice = price
+    self.listingCurrencyCode = currencyCode
+    self.listingImageURL = imageURL
+  }
+  
 }

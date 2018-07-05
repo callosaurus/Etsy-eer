@@ -3,7 +3,7 @@
 //  https://gitlab.com/snippets/32429 (current file, ported to Swift 3)
 //
 //  String+HTMLEntities.swift
-//  WiivTestApp
+//  Etsy-eer
 //
 //  Created by Callum Davies on 2017-06-12.
 //  Copyright © 2017 Callum Davies. All rights reserved.
@@ -11,10 +11,7 @@
 
 import Foundation
 
-
-
 extension String {
-    
     
     /// Returns a new string made by replacing in the `String`
     /// all HTML character entity references with the corresponding

@@ -21,7 +21,6 @@ class EtsyListingCell: UITableViewCell {
     }
     
     fileprivate func configure() {
-        
         listingImageView.image = listing.listingImage
         titleLabel.text = listing.listingTitle
         titleLabel.numberOfLines = 0
@@ -29,5 +28,4 @@ class EtsyListingCell: UITableViewCell {
         priceLabel.text = listing.listingPrice
         priceLabel.textColor = UIColor.orange
     }
-
 }

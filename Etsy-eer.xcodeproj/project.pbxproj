@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FB0D7B620EDB89F00ED3880 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB0D7B520EDB89F00ED3880 /* NetworkManagerTests.swift */; };
+		3FB0D7B820EDB8B300ED3880 /* CurrencyManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB0D7B720EDB8B300ED3880 /* CurrencyManagerTests.swift */; };
+		3FB0D7BA20EDB8C600ED3880 /* RequestBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB0D7B920EDB8C600ED3880 /* RequestBuilderTests.swift */; };
+		3FB0D7BC20EDB90500ED3880 /* EtsyListingCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB0D7BB20EDB90500ED3880 /* EtsyListingCellTests.swift */; };
 		3FB2EE881EEF585200C4044C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EE871EEF585200C4044C /* AppDelegate.swift */; };
 		3FB2EE8D1EEF585200C4044C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2EE8B1EEF585200C4044C /* Main.storyboard */; };
 		3FB2EE901EEF585200C4044C /* Etsy_eer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2EE8E1EEF585200C4044C /* Etsy_eer.xcdatamodeld */; };
@@ -39,6 +43,10 @@
 		0C3F281D4776F3547EAF3A57 /* Pods-Etsy-eer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Etsy-eer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Etsy-eer/Pods-Etsy-eer.debug.xcconfig"; sourceTree = "<group>"; };
 		13DFA2B52A0A499687D75EE9 /* Pods_Etsy_eerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Etsy_eerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCAB8F77BD0EEFAE7D26323 /* Pods_Etsy_eer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Etsy_eer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB0D7B520EDB89F00ED3880 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		3FB0D7B720EDB8B300ED3880 /* CurrencyManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyManagerTests.swift; sourceTree = "<group>"; };
+		3FB0D7B920EDB8C600ED3880 /* RequestBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderTests.swift; sourceTree = "<group>"; };
+		3FB0D7BB20EDB90500ED3880 /* EtsyListingCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtsyListingCellTests.swift; sourceTree = "<group>"; };
 		3FB2EE841EEF585200C4044C /* Etsy-eer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Etsy-eer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB2EE871EEF585200C4044C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FB2EE8C1EEF585200C4044C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +125,10 @@
 		3FB2EE9E1EEF585200C4044C /* Etsy-eerTests */ = {
 			isa = PBXGroup;
 			children = (
+				3FB0D7BB20EDB90500ED3880 /* EtsyListingCellTests.swift */,
+				3FB0D7B920EDB8C600ED3880 /* RequestBuilderTests.swift */,
+				3FB0D7B720EDB8B300ED3880 /* CurrencyManagerTests.swift */,
+				3FB0D7B520EDB89F00ED3880 /* NetworkManagerTests.swift */,
 				3FB2EE9F1EEF585200C4044C /* Etsy_eerTests.swift */,
 				3FB2EEA11EEF585200C4044C /* Info.plist */,
 			);
@@ -412,7 +424,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB0D7B620EDB89F00ED3880 /* NetworkManagerTests.swift in Sources */,
+				3FB0D7BC20EDB90500ED3880 /* EtsyListingCellTests.swift in Sources */,
 				3FB2EEA01EEF585200C4044C /* Etsy_eerTests.swift in Sources */,
+				3FB0D7B820EDB8B300ED3880 /* CurrencyManagerTests.swift in Sources */,
+				3FB0D7BA20EDB8C600ED3880 /* RequestBuilderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,10 +31,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let networkManager = NetworkManager()
         networkManager.getEtsyListings(completionHandler: {(true) in
-            
-            //removes placeholder elements for loading animation
-            self.listingDataSource.removeAll()
-            
+            self.listingDataSource.removeAll() // removes placeholder elements for loading animation
             while self.listingDataSource.count < 10 {
                 for item in networkManager.arrayOfListings {
                     if item.listingCurrencyCode == "USD" {
@@ -51,8 +48,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         })
     }
     
-    func loaded()
-    {
+    func loaded() {
         Loader.removeLoaderFrom(self.tableView)
     }
     
@@ -86,17 +82,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func configureSampleDataSource() {
-        
         for _ in 0..<15 {
             let sampleListing = Listing(title: "", price: "", currencyCode: "", imageURL: URL(string: "http://www.sample.com")!)
-            //            sampleListing.listingImage = UIImage(named: "sample_picture_image")
             self.listingDataSource.append(sampleListing)
         }
-        
     }
     
     @IBAction func currencyControlValueChanged(_ sender: UISegmentedControl) {
-        
         self.previousSegmentIndex = self.actualSegmentIndex
         self.actualSegmentIndex = sender.selectedSegmentIndex
         
@@ -104,11 +96,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             let newPrice = self.currencyManager.convert(price: item.listingPrice!, fromThisCurrency: sender.titleForSegment(at: self.previousSegmentIndex!)!, toCurrency: (sender.titleForSegment(at: self.actualSegmentIndex!))!)
             item.listingPrice = "\(newPrice)"
         }
-        
         self.tableView.reloadData()
     }
     
-    //MARK: Tableview methods
+    //MARK: Tableview Delegate methods
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -120,10 +111,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listing", for: indexPath) as! EtsyListingCell
         cell.listing = listingDataSource[indexPath.row]
+        cell.isUserInteractionEnabled = false
         return cell
     }
-    
-
-    
-
 }
